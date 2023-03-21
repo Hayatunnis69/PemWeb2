@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
     function kelulusan($_nilai){
@@ -29,4 +30,37 @@
     }
 
 
+=======
+<?php
+
+    function kelulusan($_nilai){
+        if($_nilai > 55){
+            return 'LULUS' ;
+        } elseif($_nilai < 55){
+            return 'TIDAK LULUS' ;
+        } else{
+            return 'TIDAK VALID' ;
+        }
+    }
+
+
+    function grade($_nilai){
+        if($_nilai <= 35){
+            return 'E';
+        }elseif($_nilai <= 55){
+            return 'D' ;
+        }elseif($_nilai <= 69){
+            return 'C' ;
+        }elseif($_nilai <= 84){
+            return 'B' ;
+        }elseif($_nilai <=100){
+            return 'A' ;
+        }else {
+            return 'TIDAK VALID' ;
+        }
+
+    }
+
+
+>>>>>>> 55bfec9dd7207d1c259d37538093b99777ecd74b
 ?>
