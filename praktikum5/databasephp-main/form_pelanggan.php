@@ -98,7 +98,7 @@ require_once 'dbkoneksi.php';
             $sqljenis = "SELECT * FROM kartu";
             $rsjenis = $dbh->query($sqljenis);
         ?>
-      <select id="kartu-id" name="kartu-id" class="custom-select">
+      <select id="kartu_id" name="kartu_id" class="custom-select">
           <?php 
             foreach($rsjenis as $rowjenis){
          ?>
