@@ -60,3 +60,26 @@ Route::get('/input/form',
 Route::post('/input/hasil',
     [InputController::class, 'hasil'])->name('input/hasil');
     
+
+use App\Http\Controllers\TokoController;
+
+Route::prefix('toko')->group(function(){
+    
+Route::get('/',
+    [TokoController::class, 'index']);
+    
+Route::get('/produk',
+    [TokoController::class, 'index']);
+    
+Route::get('/profile',
+    [TokoController::class, 'index']);
+    
+Route::get('/detail',
+    [TokoController::class, 'detail']);
+
+Route::get('/about',
+    [TokoController::class, 'about']);
+    
+});
+    
+    
