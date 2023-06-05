@@ -36,3 +36,27 @@ Route::get('/produk/{id}', function ($id){
 Route::get('/home', function () {
     return view('home');
 });
+
+use App\Http\Controllers\UserController;
+
+Route::get('/user', 
+    [UserController::class, 'index']);
+
+Route::get('/user/daftar', 
+    [UserController::class, 'daftar']);
+
+Route::post('/user/store', 
+    [UserController::class, 'store'])->name('user/store');
+
+
+use App\Http\Controllers\InputController;
+
+Route::get('/input',
+    [InputController::class, 'index']);
+    
+Route::get('/input/form', 
+    [InputController::class, 'form']);
+    
+Route::post('/input/hasil',
+    [InputController::class, 'hasil'])->name('input/hasil');
+    
