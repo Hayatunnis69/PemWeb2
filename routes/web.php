@@ -79,7 +79,14 @@ Route::get('/detail',
 
 Route::get('/about',
     [TokoController::class, 'about']);
+
+Route::get('/admin',
+    [TokoController::class, 'admin']);
+
+Route::get('/customer',
+    [TokoController::class, 'customer']);
     
 });
     
+
     
