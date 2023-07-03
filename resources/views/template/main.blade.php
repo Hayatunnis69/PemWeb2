@@ -37,6 +37,18 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
+
+
+
+      @if (auth::user()->role != 'pelanggan')
+        <a href=" {{ route('produk.admin') }} " class="btn btn-primary mx-3 my-3">Admin </a>
+      @else
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+
+
     </div>
   </div>
 </nav>
